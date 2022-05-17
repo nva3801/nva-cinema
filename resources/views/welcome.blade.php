@@ -46,8 +46,7 @@
                             <i class="fa-solid fa-chevron-down" style="font-size: 12px;"></i>
                         </li>
                         <li class="header_items">
-                            Thành Viên
-                            <i class="fa-solid fa-chevron-down" style="font-size: 12px;"></i>
+                            <a href="{{ url('tin-tuc') }}">Tin Tức</a>
                         </li>
                     </ul>
                     <div class="header_icon">

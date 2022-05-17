@@ -102,6 +102,7 @@ const btnBooking = document.getElementById("seat_btn");
 btnBooking.addEventListener("click", function() {
     if(seatName.innerText==='' && seatPrice.innerText === '0') {
         alert("Bạn cần chọn ít nhất 1 ghế");
+        history.back();
     }
 })
 

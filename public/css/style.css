@@ -47,6 +47,13 @@ header {
 .header_items:hover .header_dropdown {
     display: block;
 }
+.header_items a {
+    color: white;
+    text-decoration: none;
+}
+.header_items a:hover {
+    color: white;
+}
 .header_dropdown {
     display: none;
     position: absolute;
@@ -360,7 +367,7 @@ footer {
 .product_language,
 .product_rated {
     font-size: 18px;
-    padding: 0 10px;
+    padding: 3px 10px;
 }
 .product_right label {
     font-weight: bold;
@@ -738,6 +745,31 @@ footer {
 }
 .news_image {
     width: 44%;
+}
+.listnews {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+}
+.listnews-item {
+    background-color: #213a69;
+    border-radius: 5px;
+}
+.listnews-item img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.listnews-title {
+    padding:20px;
+    font-size: 18px;
+}
+.listnews a {
+    text-decoration: none;
+    color: white;
+}
+.listnews a:hover {
+    color: white;
 }
 /* PC */
 @media (min-width: 1024px) {

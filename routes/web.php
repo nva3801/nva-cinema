@@ -30,6 +30,7 @@ Route::get('danh-muc/{slug}', [CategoryController::class, 'category'])->name("ca
 Route::get('phim/{slug}', [MovieController::class, 'movie'])->name("movie");
 Route::get('time/{id}', [MovieTimeController::class, 'time'])->name("time");
 Route::get('booking/{id}', [BookingController::class, 'booking'])->name("booking");
+Route::get('tin-tuc', [NewsController::class, 'listnews']);
 Route::get('tin-tuc/{id}', [NewsController::class, 'news'])->name("news");
 Route::get('don-hang', [BillController::class, 'bill']);
 Route::get('don-hang/{madonhang}', [BillController::class, 'billdetail'])->name('billdetail');
