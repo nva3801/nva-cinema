@@ -23,6 +23,7 @@ class PaymentController extends Controller
         $user = User::find($data['id']);
         $booking = new Booking;
         $booking->madonhang = rand(0, 9999);
+        $booking->user_id = $user->id;
         $booking->username = $user->name;
         $booking->email = $user->email;
         $booking->phoneNumber = $user->phoneNumber;

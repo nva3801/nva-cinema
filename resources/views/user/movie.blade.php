@@ -67,7 +67,7 @@
                             </ul>
                             <div class="tab_content">
                                 <div class="popup_cinema">
-                                    <div class="site">Hà Nôi</div>
+                                    <div class="site">Hà Nội</div>
                                     <ul id="show-time">
 
                                     </ul>
