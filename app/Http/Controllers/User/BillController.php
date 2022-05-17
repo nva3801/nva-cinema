@@ -37,10 +37,13 @@ class BillController extends Controller
         ->select('booking_details.madonhang', 'booking_details.chair', 'movie_times.time', 'movie_dates.date', 'movies.name')
         ->get();
         $bookingdetail_id = BookingDetail::where('madonhang', $madonhang)->first();
+        $booking = Booking::where('madonhang', $madonhang)->first();
+        $user = User::where('id', $booking->user_id)->first();
         return view('user.billdetail', [
             'category' => $category,
             'bookingdetail' => $bookingdetail,
             'bookingdetail_id' => $bookingdetail_id,
+            'user' => $user,
         ]);
     }
 }

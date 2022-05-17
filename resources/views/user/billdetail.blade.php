@@ -10,6 +10,9 @@
 <section class="py-3">
     <div class="container">
         <h3 class="text-center">Đơn hàng số: {{ $bookingdetail_id->madonhang }}</h3>
+        @if(Auth::id() !== $user->id)
+            <h3 class="text-center mt-4">Không có giá trị cần tìm</h3>
+        @else
         <table class="table text-white">
             <thead>
                 <tr>
@@ -35,6 +38,7 @@
                 @endforeach
             </tbody>
         </table>
+        @endif
     </div>
 </section>
 
