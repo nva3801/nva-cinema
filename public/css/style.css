@@ -452,7 +452,9 @@ footer {
     list-style: none;
     display: flex;
 }
-
+.show-time {
+    cursor: pointer;
+}
 .popup_cinema .site {
     padding: 5px 30px 10px;
     font-size: 20px;
@@ -469,7 +471,7 @@ footer {
     text-decoration: none;
     color: #000;
 }
-.popup_cinema .show-time {
+.popup_cinema #show-time {
     list-style: none;
     display: flex;
 }
