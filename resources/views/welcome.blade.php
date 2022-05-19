@@ -42,8 +42,8 @@
                             </div>
                         </li>
                         <li class="header_items">
-                            Rạp CGV
-                            <i class="fa-solid fa-chevron-down" style="font-size: 12px;"></i>
+                            Rạp
+                            {{-- <i class="fa-solid fa-chevron-down" style="font-size: 12px;"></i> --}}
                         </li>
                         <li class="header_items">
                             <a href="{{ url('tin-tuc') }}">Tin Tức</a>
